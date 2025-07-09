@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    header {
+      text-align: center;
+      padding: 10px;
+      background-image: url("images/bg-header-desktop.png");
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    @media(max-width:375px) {
+
+
+      header {
+        text-align: center;
+        padding: 10px;
+        background-image: url("images/bg-header-desktop.png");
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+
+
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header h3 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .ios {
+      background-color: hsl(171, 66%, 44%);
+      border: 1px solid hsl(171, 66%, 44%);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
+    }
+
+
+
+    .mac {
+      background-color: hsl(233, 100%, 69%);
+      border: 1px solid hsl(233, 100%, 69%);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
+    }
+
+    .snippets {
+      margin-top: 10px;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .snippets h3 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .snippets p {
+
+      margin-left: 100px;
+      margin-right: 100px;
+      font-size: 18px;
+    }
+
+    .desktop {
+      padding: 20px;
+    }
+
+    .text {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+
+    .text h4 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .text p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 18px;
+    }
+
+    .access {
+      text-align: center;
+    }
+
+    .access h2 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .access p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-left: 180px;
+      margin-right: 180px;
+      font-size: 18px;
+
+    }
+
+    .img&tablet {
+      margin-left: 60px;
+      margin-right: 60px;
+      text-align: center;
+
+    }
+
+    .Supercharge {
+
+      text-align: center;
+
+    }
+
+    .Supercharge h2 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .Supercharge p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 18px;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+      padding: 50px;
+    }
+
+    .icons&text {
+      display: flex;
+    }
+
+    .clippB {
+
+      text-align: center;
+    }
+
+    .clippB h2 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body p {
+      color: hsl(210, 10%, 33%);
+    }
+
+    footer {
+      background-color: hsl(201, 11%, 66%);
+    }
+
+    ol li {
+      list-style: none;
+      display: inline-flex;
+      padding: 15px;
+
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    #foot {
+
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    #iconF {
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+
+    #imgF {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .icons {
+      text-align: center;
+    }
+
+    #tablet {
+      display: block;
+      margin: auto;
+
+    }
+
+
+    @media(max-width:375px) {}
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" width="70px" height="80px" />
+
+    <h3>A history of everything you copy </h3>
+
+    <p>Clipboard allows you to track and organize everything you copy.<br>
+      Instantly access your clipboard on all your devices.</p>
+
+    <button class="ios">Download for iOS</button>
+    <button class="mac">Download for Mac </button>
+
+  </header>
+
+  <section class="snippets">
+    <h3>Keep track of your snippets Clipboard</h3>
+
+
+    <p>instantly stores any item you copy in the cloud, meaning you can access your
+      snippets immediately on all your devices. Our Mac and iOS apps will help you
+      organize everything.</p>
+
+  </section>
+
+  <section class="desktop">
+
+    <img src="images/image-computer.png" style="float: left; margin-right: 70px; margin-left: 100px;" width="320px"
+      height="350px" />
+    <section class="text">
+
+      <h4>Quick Search</h4>
+
+      <p>Easily search your snippets by content, category, web address, application, and more.</p>
+
+      <h4> iCloud Sync</h4>
+
+      <p>Instantly saves and syncs snippets across all your devices.</p>
+
+      <h4>Complete History</h4>
+
+      <p>Retrieve any snippets from the first moment you started using the app.</p>
+    </section>
+  </section>
+  <br>
+
+  <section class="access">
+
+    <h2>Access Clipboard anywhere</h2>
+
+    <p>Whether you’re on the go, or at your computer, you
+      can access all your Clipboard snippets in a few simple clicks.
+    </p>
+
+
+  </section>
+  <br>
+
+  <div class="img&tablet">
+
+    <img id="tablet" src="images/image-devices.png">
+  </div>
+  <br>
+
+  <section class="Supercharge">
+    <h2>Supercharge your workflow</h2>
+
+    <p>We’ve got the tools to boost your productivity. </p>
+
+
+  </section>
+
+  <br>
+
+  <section class="icons&text">
+    <ul>
+      <li>
+        <i class="fa-solid fa-font-awesome"></i>
+        <h2>Create blacklists</h2>
+        <p> Ensure sensitive information never makes its way to your clipboard by excluding certain sources. </p>
+      </li>
+      <li>
+        <img src="images/" />
+        <h2>Plain text snippets</h2>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </li>
+      <li>
+        <img src="images/" />
+        <h2>Sneak preview</h2>
+        <p> Quick preview of all snippets on your Clipboard for easy access.</p>
+      </li>
+    </ul>
+
+    <br>
+
+  </section>
+
+  <div class="icons">
+    <ul>
+      <li>
+        <i><img src="images/logo-google.png" /></i>
+      </li>
+      <li>
+        <i><img src="images/logo-ibm.png" /></i>
+      </li>
+
+      <li>
+        <i><img src="images/logo-microsoft.png" /></i>
+      </li>
+      <li>
+        <i><img src="images/logo-hp.png" /></i>
+      </li>
+      <li>
+        <i><img src="images/logo-vector-graphics.png" /></i>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <section class="clippB">
+    <h2>Clipboard for iOS and Mac OS</h2>
+    <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding
+      to your clipboard.
+    </p>
+    <br>
+
+
+    <button class="ios">Download for iOS</button>
+    <button class="mac">Download for Mac </button>
+
+  </section>
+
+  <br>
+
+
+  <footer>
+    <div id="foot">
+      <div id="imgF">
+        <img src="images/logo.svg" />
+      </div>
+      <div id="listF">
+        <ol>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+          <li>Privacy Policy</li><br>
+          <li>Press Kit</li>
+          <li>Install Guide</li>
+        </ol>
+      </div>
+
+      <div id="iconF">
+        <ul>
+          <li>
+            <i><img src="images/icon-facebook.svg" /></i>
+          </li>
+          <li>
+            <i><img src="images/icon-twitter.svg" /></i>
+          </li>
+          <li>
+            <i><img src="images/icon-instagram.svg" /></i>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <p class="attribution">
+      Bootcamp 2023 by
+      <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>.
+      Developed by <a href="#">Your Name Here and Link you your portfolio website</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
